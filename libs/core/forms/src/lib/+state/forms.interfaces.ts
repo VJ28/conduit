@@ -3,6 +3,7 @@ import { ValidatorFn } from '@angular/forms';
 export interface Field {
   type: FieldType;
   name: string;
+  title?: string;
   label?: string;
   placeholder?: string;
   validator?: ValidatorFn[];

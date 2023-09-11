@@ -8,27 +8,38 @@ import { articleActions, articleEditActions, articleQuery } from '@realworld/art
 
 const structure: Field[] = [
   {
+    title: 'Article Title',
     type: 'INPUT',
     name: 'title',
-    placeholder: 'Article Title',
+    placeholder: 'Enter a cool & snappy title',
     validator: [Validators.required],
   },
   {
+    title: 'Description',
     type: 'INPUT',
     name: 'description',
-    placeholder: "What's this article about?",
+    placeholder: 'Enter a one sentence summary of the article',
     validator: [Validators.required],
   },
   {
+    title: 'Article',
     type: 'TEXTAREA',
     name: 'body',
-    placeholder: 'Write your article (in markdown)',
+    placeholder: 'Write your article',
     validator: [Validators.required],
   },
   {
+    title: 'Tags',
     type: 'INPUT',
     name: 'tagList',
     placeholder: 'Enter Tags',
+    validator: [],
+  },
+  {
+    title: 'Co-authors',
+    type: 'INPUT',
+    name: 'coAuthors',
+    placeholder: 'Add co-authors',
     validator: [],
   },
 ];

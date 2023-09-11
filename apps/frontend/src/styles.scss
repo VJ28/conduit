@@ -3,3 +3,27 @@
 a {
   cursor: pointer;
 }
+
+.form {
+  border: 1px solid #f1f1f1;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: #fafafa;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  margin-right: -4%;
+}
+
+@media screen and (max-width: 767px) {
+  .submit-btn {
+    margin-right: -6%;
+  }
+}
